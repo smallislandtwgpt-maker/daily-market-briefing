@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日國際金融投資晨報｜2026-06-03</title>
+  <style>
+    :root {
+      --bg: #f5f7f8;
+      --ink: #18202a;
+      --muted: #5d6a76;
+      --line: #dce3e8;
+      --panel: #ffffff;
+      --panel-2: #eef4f2;
+      --good: #0d7a5f;
+      --bad: #b43b3b;
+      --watch: #84610f;
+      --blue: #275f86;
+      --navy: #1b3448;
+      --chip: #e8f0f5;
+      --shadow: 0 10px 28px rgba(24, 32, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 56px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #173145, #2d6f67);
+      color: #fff;
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: rgba(255,255,255,0.78);
+      font-size: 13px;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 920px;
+      color: rgba(255,255,255,0.88);
+      font-size: 16px;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.92);
+      font-size: 13px;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    section {
+      margin-top: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    section > h2 {
+      margin: 0;
+      padding: 18px 22px;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.2;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel-2);
+      letter-spacing: 0;
+    }
+
+    .content { padding: 20px 22px 24px; }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 15px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+      color: var(--navy);
+    }
+
+    .card p { margin: 0; color: var(--muted); }
+
+    .metric {
+      font-size: 28px;
+      line-height: 1.1;
+      font-weight: 720;
+      color: var(--ink);
+    }
+
+    .metric-note { margin-top: 6px; color: var(--muted); font-size: 13px; }
+
+    .tag {
+      display: inline-block;
+      margin: 0 6px 6px 0;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: #30414f;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .tag.good { background: #e2f3ee; color: var(--good); }
+    .tag.bad { background: #f7e7e7; color: var(--bad); }
+    .tag.watch { background: #f6efd9; color: var(--watch); }
+    .tag.blue { background: #e5eef5; color: var(--blue); }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .news-item:last-child { border-bottom: 0; }
+
+    .news-label {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .news-body h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    .news-body p { margin: 6px 0; }
+    .source { color: var(--muted); font-size: 13px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: #f0f5f6;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .callout {
+      border-left: 4px solid var(--blue);
+      background: #edf5f7;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+
+    .callout.good { border-left-color: var(--good); background: #edf8f4; }
+    .callout.bad { border-left-color: var(--bad); background: #fbeded; }
+    .callout.watch { border-left-color: var(--watch); background: #fbf6e7; }
+
+    .checklist {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .checklist li { margin: 7px 0; }
+
+    .footer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .news-item { grid-template-columns: 1fr; }
+      header { padding: 24px 20px; }
+      .content { padding: 18px; }
+      section > h2 { padding: 16px 18px; }
+      table { font-size: 13px; }
+      th, td { padding: 9px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">每日國際金融投資晨報</p>
+      <h1>AI 政策、Fed 偏鷹與台美股 AI 主線共振</h1>
+      <p class="subtitle">2026-06-03 台北時間晨報。重點聚焦美國 AI/資安行政命令、Fed 官員偏鷹訊號、台美股創高後的估值風險、SpaceX 低軌軍用通訊合約，以及 AI 資料中心帶動的電力與能源主題。</p>
+      <div class="meta-row">
+        <span class="pill">產出時間：2026-06-03 09:50 TST</span>
+        <span class="pill">市場範圍：美股 + 台股</span>
+        <span class="pill">策略風格：積極型，但控管追高風險</span>
+        <span class="pill">資料截點：美股/台股 2026-06-02 收盤後</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>今日市場結論</h2>
+      <div class="content grid grid-2">
+        <div class="card">
+          <h3>1. 主線仍是 AI，但焦點從晶片擴散到 AI PC、資安、電力與低軌通訊</h3>
+          <p>NVIDIA Computex 訊號、白宮 AI/資安行政命令與 SpaceX 軍用低軌網路合約，讓「AI 基礎建設」不只看 GPU，也延伸到伺服器、網通、電力設備、資安與衛星通訊。</p>
+        </div>
+        <div class="card">
+          <h3>2. Fed 偏鷹風險升高，短線不宜忽略殖利率壓力</h3>
+          <p>Fed 官員 Hammack 表示若通膨不降，政策可能需要更緊；Fed 官方行事曆顯示下一次 FOMC 為 6 月 16-17 日。高估值科技股若遇美債殖利率再上行，波動會放大。</p>
+        </div>
+        <div class="card">
+          <h3>3. 台股強勢由 AI 與半導體支撐，但已進入追價紀律區</h3>
+          <p>台股 6 月 2 日再創收盤新高，AI、記憶體與半導體權值股領漲。策略上偏多，但應以分批與回測支撐布局，避免在急漲族群單日追高。</p>
+        </div>
+        <div class="card">
+          <h3>4. 軍工、無人機、低軌衛星進入中長線題材窗口</h3>
+          <p>美國國防通訊採購與台灣無人機非紅供應鏈，提供軍工/航太/衛星零組件題材，但短線消息面與實際訂單貢獻必須分開檢查。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>市場快照</h2>
+      <div class="content grid grid-4">
+        <div class="card">
+          <h3>S&amp;P 500</h3>
+          <div class="metric">7,609.78</div>
+          <div class="metric-note">+0.1%，續創高；AI 題材仍主導風險偏好。</div>
+        </div>
+        <div class="card">
+          <h3>Nasdaq Composite</h3>
+          <div class="metric">27,093.90</div>
+          <div class="metric-note">小漲不到 0.1%；大型科技股分歧。</div>
+        </div>
+        <div class="card">
+          <h3>TAIEX</h3>
+          <div class="metric">45,557.31</div>
+          <div class="metric-note">+0.48%，續創收盤新高；AI 與記憶體強。</div>
+        </div>
+        <div class="card">
+          <h3>風險主軸</h3>
+          <div class="metric">偏多但擁擠</div>
+          <div class="metric-note">AI 續強，Fed/能源/估值是三個主要變數。</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>重大新聞雷達</h2>
+      <div class="content">
+        <div class="news-item">
+          <div class="news-label">政策、央行與美元利率</div>
+          <div class="news-body">
+            <h3>Fed 偏鷹訊號升溫，6 月 FOMC 前殖利率敏感度提高</h3>
+            <p><span class="tag bad">股市短線利空</span><span class="tag watch">影響：短線到中線</span><span class="tag blue">可信度：高</span></p>
+            <p>Reuters 報導 Cleveland Fed President Beth Hammack 表示，如果通膨壓力未緩解，Fed 可能需要更緊的政策。Fed 官方頁面顯示下一次 FOMC 會議在 2026-06-16 至 2026-06-17。</p>
+            <p class="source">來源：<a href="https://www.marketscreener.com/news/fed-s-hammack-eyes-tighter-policy-if-inflation-doesn-t-abate-ce7f5ddedb8ef720">Reuters via MarketScreener</a>、<a href="https://www.federalreserve.gov/monetarypolicy.htm">Federal Reserve</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">科技與 AI 趨勢</div>
+          <div class="news-body">
+            <h3>白宮發布 AI 創新與安全行政命令，資安與 frontier model 評估成政策焦點</h3>
+            <p><span class="tag good">資安/AI 基建利多</span><span class="tag watch">大型模型監管觀察</span><span class="tag blue">可信度：高</span></p>
+            <p>白宮 6 月 2 日行政命令要求強化政府與關鍵基礎設施的 AI 資安防禦，建立 AI cybersecurity clearinghouse，並設計自願性 frontier model 框架；同時明確避免建立強制 licensing 或 preclearance。</p>
+            <p class="source">來源：<a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House Executive Order</a>、<a href="https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/?query-11-page=3">White House Fact Sheet</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">財經與投資市場</div>
+          <div class="news-body">
+            <h3>美股再創高，AI 贏家繼續推升大盤，但 Alphabet 籌資與估值壓力形成分歧</h3>
+            <p><span class="tag good">AI 族群利多</span><span class="tag watch">估值風險</span><span class="tag blue">可信度：高</span></p>
+            <p>AP 指出 S&amp;P 500 6 月 2 日小漲 0.1% 至 7,609.78，Dow +0.4%，Nasdaq 小漲不到 0.1%。Marvell 因 AI 題材大漲，Alphabet 因籌資支應 AI 投資而拖累盤面。</p>
+            <p class="source">來源：<a href="https://apnews.com/article/3032a3ae19ec9715fa2b4c9fda85268e">Associated Press</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">科技與 AI 趨勢</div>
+          <div class="news-body">
+            <h3>NVIDIA 在 Computex 推 AI PC/agentic AI 敘事，供應鏈題材從雲端延伸到端側</h3>
+            <p><span class="tag good">AI PC/半導體利多</span><span class="tag watch">短線擁擠</span><span class="tag blue">可信度：高</span></p>
+            <p>NVIDIA 發表 RTX Spark superchip，主打 Windows PC 的本地 AI agent 能力；AP 與 Reuters 報導皆指向 AI PC 與 agentic AI 將成為下一波硬體敘事。</p>
+            <p class="source">來源：<a href="https://apnews.com/article/c807f7333b93b9927b62b1240dcf65a1">Associated Press</a>、<a href="https://ca.investing.com/news/stock-market-news/nvidia-launches-new-chip-to-bring-ai-directly-to-personal-computers-4667868">Reuters via Investing.com</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">衛星、太空與通訊基礎建設</div>
+          <div class="news-body">
+            <h3>SpaceX 獲美國太空軍 22.9 億美元 SDN Backbone 合約，低軌軍用通訊題材升溫</h3>
+            <p><span class="tag good">低軌衛星/軍工利多</span><span class="tag watch">影響：中長線</span><span class="tag blue">可信度：高</span></p>
+            <p>Reuters 報導美國太空軍授予 SpaceX 22.9 億美元合約，建置高安全、高速衛星通訊網路，連結軍事感測器與武器平台；系統屬於低軌衛星 mesh 通訊架構，原型目標為 2027 年底。</p>
+            <p class="source">來源：<a href="https://m.investing.com/news/stock-market-news/us-space-force-awards-spacex-229-billion-contract-for-military-space-data-network-4710898?ampMode=1">Reuters via Investing.com</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">能源、電力與基礎建設</div>
+          <div class="news-body">
+            <h3>EIA 最新展望：中東供給擾動與美國電力需求成市場雙風險</h3>
+            <p><span class="tag good">能源/電網設備利多</span><span class="tag bad">通膨利空</span><span class="tag watch">影響：中線</span></p>
+            <p>EIA 5 月 STEO 指出，中東原油生產中斷較 4 月顯著增加，並假設荷莫茲海峽到 5 月底仍有效封閉、6 月船運開始恢復；同頁也顯示 2026 年美國電力需求預估上升，商業部門領先成長。</p>
+            <p class="source">來源：<a href="https://www.eia.gov/outlooks/steo/report/">U.S. Energy Information Administration</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">國際局勢與地緣政治</div>
+          <div class="news-body">
+            <h3>台海與供應鏈安全仍是 AI 產業鏈的結構性風險</h3>
+            <p><span class="tag watch">中性觀察</span><span class="tag good">台灣供應鏈戰略地位利多</span><span class="tag blue">可信度：高</span></p>
+            <p>Reuters 報導總統賴清德表示維持政治現狀是確保全球供應鏈最負責任的作法；Computex 期間多位科技領袖也強調台灣在 AI 與晶片供應鏈中的核心地位。</p>
+            <p class="source">來源：<a href="https://www.marketscreener.com/news/taiwan-president-says-keeping-political-status-quo-is-key-to-securing-supply-chains-ce7f5dd9de8af025">Reuters via MarketScreener</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">亞洲與台灣相關新聞</div>
+          <div class="news-body">
+            <h3>台股續創高，AI 與記憶體擴散到更多電子族群</h3>
+            <p><span class="tag good">台股科技利多</span><span class="tag watch">短線過熱</span><span class="tag blue">可信度：高</span></p>
+            <p>Focus Taiwan 指出台股 6 月 2 日收 45,557.31，再創收盤新高；記憶體族群如南亞科、威剛、華邦電強勢，科技權值與 AI 應用仍支撐主盤。</p>
+            <p class="source">來源：<a href="https://focustaiwan.tw/business/202606020020">Focus Taiwan</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">軍事、國防與無人機產業</div>
+          <div class="news-body">
+            <h3>無人機與反無人機需求延續，台灣非紅供應鏈具政策支撐</h3>
+            <p><span class="tag good">無人機/國防供應鏈利多</span><span class="tag watch">需看訂單落地</span><span class="tag blue">可信度：中高</span></p>
+            <p>近期美國與盟友持續強化反無人機能力，台灣亦推動非紅無人機供應鏈。台灣無人機出口與國防採購題材，對航太、馬達、光電、通訊模組、PCB 與系統整合商形成中長線觀察點。</p>
+            <p class="source">來源：<a href="https://defensescoop.com/2026/05/19/pentagon-awards-500-million-contract-to-perennial-autonomy-for-counter-drone-systems/">DefenseScoop</a>、<a href="https://www.taiwannews.com.tw/en/news/6351786">Taiwan News</a></p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">亞洲與東南亞市場</div>
+          <div class="news-body">
+            <h3>東南亞股市回穩，但油價、匯率與外資流向壓力仍在</h3>
+            <p><span class="tag watch">中性偏保守</span><span class="tag bad">能源進口國壓力</span><span class="tag blue">可信度：中高</span></p>
+            <p>Business Recorder 引述 Reuters 市場報導指出，東南亞股市長週末後回升，但印尼股市與匯率仍受能源價格、財政與外資情緒影響。對台灣而言，東南亞需求與供應鏈投資仍須追蹤油價與匯率壓力。</p>
+            <p class="source">來源：<a href="https://www.brecorder.com/news/40423704/se-asia-stocks-rise-as-trading-resumes">Business Recorder / Reuters</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>美股影響分析</h2>
+      <div class="content">
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>偏多族群</h3>
+            <p><span class="tag good">AI 半導體</span><span class="tag good">網通/光通訊</span><span class="tag good">資安</span><span class="tag good">軍工衛星</span></p>
+            <p>AI PC、資料中心、資安行政命令與低軌軍用通訊合約，支撐 NVDA、TSM ADR、MRVL、AVGO、AMD、PANW/CRWD 類資安、LMT/RTX/NOC 類軍工與衛星通訊鏈。</p>
+          </div>
+          <div class="card">
+            <h3>承壓族群</h3>
+            <p><span class="tag bad">高估值軟體</span><span class="tag bad">需大規模籌資者</span><span class="tag bad">利率敏感股</span></p>
+            <p>Fed 偏鷹訊號若推升實質利率，高本益比軟體、未獲利 AI 概念股、小型成長股與靠外部融資擴張者較易被壓縮。</p>
+          </div>
+          <div class="card">
+            <h3>關鍵指標</h3>
+            <p><span class="tag watch">10Y yield</span><span class="tag watch">VIX</span><span class="tag watch">SOX</span><span class="tag watch">WTI/Brent</span></p>
+            <p>若費半續強且美債殖利率不再急升，AI 主線可延續；若油價再上行並帶動升息預期，Nasdaq 與高估值科技股將更敏感。</p>
+          </div>
+        </div>
+        <div class="callout watch">
+          <strong>市場推論：</strong>目前不是全面風險趨避，而是「AI 核心股強、估值過高或籌資壓力股分歧」。積極型策略可順勢，但要把槓桿與追價幅度降下來。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>台股與台灣經濟影響</h2>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>影響面向</th>
+              <th>判斷</th>
+              <th>受惠/承壓方向</th>
+              <th>需要確認的條件</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>半導體與 AI 供應鏈</td>
+              <td>偏多</td>
+              <td>台積電、日月光、廣達、緯創、緯穎、鴻海、技嘉、華碩、散熱/電源/PCB 供應鏈。</td>
+              <td>美股 AI 股能否續強、外資買超是否延續、台幣是否穩定。</td>
+            </tr>
+            <tr>
+              <td>記憶體</td>
+              <td>偏多但波動高</td>
+              <td>南亞科、華邦電、威剛等受 AI PC 與伺服器需求敘事支撐。</td>
+              <td>漲價循環是否有實際報價支撐，避免只靠短線題材。</td>
+            </tr>
+            <tr>
+              <td>軍工、無人機、衛星通訊</td>
+              <td>中長線偏多</td>
+              <td>漢翔、雷虎、耀登、昇達科、啟碁與相關通訊/射頻/零組件鏈可納入觀察。</td>
+              <td>國防預算、出口訂單、毛利率與出貨時程是否落地。</td>
+            </tr>
+            <tr>
+              <td>能源與電力成本</td>
+              <td>中性偏壓力</td>
+              <td>台灣為能源進口經濟體，油氣上行會壓縮企業成本與民生通膨；但電力設備、儲能與能源管理題材受惠。</td>
+              <td>油價是否因中東供應恢復而回落；台電成本與電價政策。</td>
+            </tr>
+            <tr>
+              <td>外資與匯率</td>
+              <td>短線偏多，中線看 Fed</td>
+              <td>AI 權值股吸引外資，但若美元/美債殖利率轉強，台股高檔震盪風險升高。</td>
+              <td>美元指數、美債 10 年期殖利率、外資期貨淨部位。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>產業與公司影響矩陣</h2>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>方向</th>
+              <th>產業/題材</th>
+              <th>美股觀察</th>
+              <th>台股觀察</th>
+              <th>核心理由</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag good">利多</span></td>
+              <td>AI 半導體、AI PC、資料中心</td>
+              <td>NVDA、TSM、AMD、MRVL、AVGO、SMH/SOXX</td>
+              <td>台積電、廣達、緯創、緯穎、鴻海、技嘉、華碩</td>
+              <td>NVIDIA Computex、AI PC、雲端/端側 AI 擴散。</td>
+            </tr>
+            <tr>
+              <td><span class="tag good">利多</span></td>
+              <td>資安與 AI 安全</td>
+              <td>PANW、CRWD、ZS、MSFT、GOOGL</td>
+              <td>資安服務、系統整合與雲端服務供應鏈</td>
+              <td>白宮行政命令提高關鍵基礎設施 AI 資安需求。</td>
+            </tr>
+            <tr>
+              <td><span class="tag good">利多</span></td>
+              <td>低軌衛星、軍用通訊、國防網路</td>
+              <td>LMT、RTX、NOC、IRDM、ASTS、相關衛星/軍工 ETF</td>
+              <td>耀登、昇達科、啟碁、漢翔、相關射頻與通訊模組鏈</td>
+              <td>SpaceX SDN Backbone 合約帶動 LEO/軍用網路題材。</td>
+            </tr>
+            <tr>
+              <td><span class="tag good">利多</span></td>
+              <td>電網、變壓器、電力設備、天然氣/核能</td>
+              <td>GEV、ETN、PWR、CEG、NEE、VST</td>
+              <td>電源、儲能、電纜、散熱與能源管理供應鏈</td>
+              <td>AI 資料中心用電需求與 EIA 電力需求成長展望。</td>
+            </tr>
+            <tr>
+              <td><span class="tag bad">利空</span></td>
+              <td>高估值未獲利成長股、籌資壓力股</td>
+              <td>小型 AI 軟體、部分 SPAC/未獲利科技股</td>
+              <td>無基本面支撐的純題材股</td>
+              <td>Fed 偏鷹與高檔估值使折現率敏感度提高。</td>
+            </tr>
+            <tr>
+              <td><span class="tag watch">中性觀察</span></td>
+              <td>能源進口、航運、消費</td>
+              <td>航空、零售、部分消費循環股</td>
+              <td>航運、航空、內需消費</td>
+              <td>油價若回落有利成本，但地緣政治仍造成波動。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>今日交易觀察清單</h2>
+      <div class="content grid grid-3">
+        <div class="card">
+          <h3>AI 核心鏈：逢回分批，不追單日急漲</h3>
+          <p><span class="tag good">偏多</span><span class="tag watch">信心：中高</span></p>
+          <p>觀察 NVDA、TSM/台積電、SMH/SOXX、廣達、緯創、緯穎、鴻海。觸發條件是費半續強、外資買超與台股量能維持；失效條件是美債殖利率急升或 AI 權值股放量長黑。</p>
+        </div>
+        <div class="card">
+          <h3>記憶體與 AI PC：短線題材強，但要看量價</h3>
+          <p><span class="tag good">偏多但高波動</span><span class="tag watch">信心：中</span></p>
+          <p>觀察南亞科、華邦電、威剛與 AI PC 零組件。若報價與法人買盤跟上可續抱；若只剩隔日沖量能，應降低倉位。</p>
+        </div>
+        <div class="card">
+          <h3>低軌衛星/軍工：先建立觀察倉，等訂單確認加碼</h3>
+          <p><span class="tag good">中長線偏多</span><span class="tag watch">信心：中</span></p>
+          <p>觀察 LMT、RTX、NOC、IRDM、ASTS，以及台股耀登、昇達科、啟碁、漢翔、雷虎。題材成立，但台股需驗證營收與訂單能見度。</p>
+        </div>
+        <div class="card">
+          <h3>資安：政策催化轉強</h3>
+          <p><span class="tag good">偏多</span><span class="tag watch">信心：中</span></p>
+          <p>白宮 AI 資安命令提升關鍵基礎設施需求，PANW、CRWD、ZS、MSFT 等可觀察。若政府標案或企業預算擴張明確，題材可延續。</p>
+        </div>
+        <div class="card">
+          <h3>電力設備/能源：AI 第二層受益</h3>
+          <p><span class="tag good">偏多</span><span class="tag watch">信心：中高</span></p>
+          <p>GEV、ETN、PWR、CEG、VST、天然氣與核能鏈受 AI 用電需求支撐。台股則看電源、散熱、電纜、儲能與能源管理。</p>
+        </div>
+        <div class="card">
+          <h3>高估值軟體與弱基本面題材股：控制曝險</h3>
+          <p><span class="tag bad">偏空/避開</span><span class="tag watch">信心：中</span></p>
+          <p>若 Fed 偏鷹與油價共振，未獲利高估值股最容易被賣。短線只適合事件交易，不適合作為核心部位。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>積極型投資建議</h2>
+      <div class="content">
+        <div class="callout good">
+          <strong>策略建議：</strong>今日偏「順勢偏多」，但不是無腦追高。核心部位放在 AI 半導體/伺服器/資料中心電力；衛星、軍工、無人機作為題材衛星倉；高估值且無獲利支撐的 AI 概念股應降低曝險。
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>偏多布局</h3>
+            <ul class="checklist">
+              <li>美股：SMH/SOXX、NVDA、TSM、MRVL、AVGO、AMD 可逢回分批。</li>
+              <li>台股：台積電、AI 伺服器、散熱、電源、記憶體強勢股以回測支撐承接。</li>
+              <li>第二層：電力設備、資安、低軌衛星與軍工可建立小部位觀察倉。</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>偏空/避開</h3>
+            <ul class="checklist">
+              <li>避免追高單日暴量的純題材股，尤其缺乏訂單與營收驗證者。</li>
+              <li>Fed 偏鷹期間，降低高本益比、未獲利、需持續募資的科技股權重。</li>
+              <li>油價若再急漲，航空、消費循環與能源進口壓力鏈不宜加碼。</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>風險控管</h3>
+            <ul class="checklist">
+              <li>積極部位分三段進場：突破確認、回測支撐、利空不破低。</li>
+              <li>若 Nasdaq 或費半出現放量長黑，短線題材倉先降 30%-50%。</li>
+              <li>個股停損看事件失效，不只看價格；例如訂單不落地、毛利不如預期、政策延遲。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout bad">
+          <strong>非個人化聲明：</strong>以上為一般市場策略與研究觀點，不是依據你的個人資產、持股、風險承受度或投資期限制定的個人化財務建議。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>未來 24 到 72 小時追蹤</h2>
+      <div class="content grid grid-2">
+        <div class="card">
+          <h3>總經與政策</h3>
+          <ul class="checklist">
+            <li>Fed 官員談話是否延續「可能升息/不急於降息」訊號。</li>
+            <li>6 月 16-17 日 FOMC 前，市場利率與美元是否再定價。</li>
+            <li>白宮 AI 行政命令後續部會指引，尤其 CISA、Treasury、Commerce/NIST 的執行細節。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>市場與產業</h3>
+          <ul class="checklist">
+            <li>費城半導體指數與台股電子權值股是否延續帶量上攻。</li>
+            <li>油價與天然氣價格是否因中東供應恢復而降溫。</li>
+            <li>SpaceX/Starlink、低軌衛星、軍用通訊、無人機與反無人機是否有新增標案或合作。</li>
+            <li>台灣 AI 伺服器、記憶體、電源、散熱與衛星通訊供應鏈的 5 月營收。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>主要來源</h2>
+      <div class="content">
+        <ul class="checklist">
+          <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House：Promoting Advanced Artificial Intelligence Innovation and Security</a></li>
+          <li><a href="https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/?query-11-page=3">White House Fact Sheet：AI Innovation and Security</a></li>
+          <li><a href="https://www.federalreserve.gov/monetarypolicy.htm">Federal Reserve：Monetary Policy / FOMC calendar</a></li>
+          <li><a href="https://www.marketscreener.com/news/fed-s-hammack-eyes-tighter-policy-if-inflation-doesn-t-abate-ce7f5ddedb8ef720">Reuters via MarketScreener：Fed's Hammack on inflation risk</a></li>
+          <li><a href="https://apnews.com/article/3032a3ae19ec9715fa2b4c9fda85268e">Associated Press：US stock indexes on 2026-06-02</a></li>
+          <li><a href="https://focustaiwan.tw/business/202606020020">Focus Taiwan：Taiwan shares end at new high</a></li>
+          <li><a href="https://m.investing.com/news/stock-market-news/us-space-force-awards-spacex-229-billion-contract-for-military-space-data-network-4710898?ampMode=1">Reuters via Investing.com：SpaceX Space Force SDN Backbone contract</a></li>
+          <li><a href="https://www.eia.gov/outlooks/steo/report/">U.S. EIA：Short-Term Energy Outlook</a></li>
+          <li><a href="https://apnews.com/article/c807f7333b93b9927b62b1240dcf65a1">Associated Press：NVIDIA AI PC superchip at Computex</a></li>
+          <li><a href="https://www.marketscreener.com/news/taiwan-president-says-keeping-political-status-quo-is-key-to-securing-supply-chains-ce7f5dd9de8af025">Reuters via MarketScreener：Taiwan status quo and supply chain security</a></li>
+        </ul>
+        <p class="footer">本晨報為手動測試版，用於驗證每日自動化輸出格式。正式自動化將於每日 07:30 台北時間執行並產出同格式 HTML。</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
