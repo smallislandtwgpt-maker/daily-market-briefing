@@ -2,6 +2,8 @@
 
 這是一個靜態 HTML 晨報網站，可部署到 GitHub Pages 或 Netlify。
 
+公開網址：<https://smallislandtwgpt-maker.github.io/daily-market-briefing/>
+
 ## 檔案結構
 
 - `index.html`：公開網站首頁，連到最新晨報。
@@ -22,4 +24,3 @@
 2. 連接 GitHub repository 或直接拖曳整個資料夾部署。
 3. Publish directory 使用 `.`。
 4. 不需要 build command。
-
