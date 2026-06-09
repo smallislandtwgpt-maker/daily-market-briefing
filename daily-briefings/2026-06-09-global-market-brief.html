@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日國際金融投資晨報｜2026-06-09</title>
+  <style>
+    :root {
+      --bg: #f3f6f8;
+      --ink: #16212b;
+      --muted: #5f6d79;
+      --panel: #ffffff;
+      --panel-soft: #edf3f5;
+      --line: #d8e1e6;
+      --navy: #173247;
+      --teal: #1d6b66;
+      --blue: #205777;
+      --good: #0f7a5e;
+      --bad: #b33e3e;
+      --mid: #8a6818;
+      --shadow: 0 14px 34px rgba(22, 33, 43, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    code {
+      padding: 1px 5px;
+      border-radius: 6px;
+      background: #eef3f6;
+      color: var(--navy);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 56px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #10293c, #256a64 58%, #d37c32 120%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: rgba(255,255,255,0.82);
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 930px;
+      color: rgba(255,255,255,0.92);
+      font-size: 16px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.95);
+      font-size: 13px;
+    }
+
+    section {
+      margin-top: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    section > h2 {
+      margin: 0;
+      padding: 18px 22px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--line);
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .content {
+      padding: 20px 22px 24px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 15px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: var(--navy);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .metric {
+      font-size: 28px;
+      line-height: 1.1;
+      font-weight: 730;
+      color: var(--ink);
+    }
+
+    .metric-note {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 0 6px 6px 0;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      white-space: nowrap;
+      background: #e7eef2;
+      color: #35424d;
+    }
+
+    .tag.good { background: #e2f3ee; color: var(--good); }
+    .tag.bad { background: #f8e7e7; color: var(--bad); }
+    .tag.mid { background: #f7efdd; color: var(--mid); }
+    .tag.blue { background: #e4eef5; color: var(--blue); }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .news-item:last-child { border-bottom: 0; }
+
+    .news-label {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .news-body h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+      color: var(--navy);
+    }
+
+    .news-body p { margin: 6px 0; }
+
+    .source {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .callout {
+      margin: 14px 0;
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      background: #edf5f7;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .callout.good {
+      border-left-color: var(--good);
+      background: #edf8f3;
+    }
+
+    .callout.bad {
+      border-left-color: var(--bad);
+      background: #fbecec;
+    }
+
+    .callout.mid {
+      border-left-color: var(--mid);
+      background: #fbf6e9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: #eff4f6;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 8px 0; }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .news-item { grid-template-columns: 1fr; }
+      .page { padding: 24px 16px 48px; }
+      header { padding: 24px 20px; }
+      .content { padding: 18px; }
+      section > h2 { padding: 16px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">每日國際金融投資晨報</p>
+      <h1>就業韌性、台灣出口創高，AI 基建與地緣風險並行</h1>
+      <p class="subtitle">2026-06-09 台北時間晨報。主線是「美國就業沒有失速、殖利率維持高檔、台灣出口再創單月高點，AI 基建需求由 GPU 延伸到 ASIC、網通與電力鏈」；但油價、制裁、軍事與出口管制讓市場仍需保留風險折價。</p>
+      <div class="meta-row">
+        <span class="pill">產出時間：2026-06-09 20:46 CST</span>
+        <span class="pill">資料截點：2026-06-09 20:00 CST</span>
+        <span class="pill">重點市場：美股、台股、美元利率、能源、AI、軍工太空</span>
+        <span class="pill">策略風格：積極型，但不追高、重視事件風險</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>市場快照</h2>
+      <div class="content grid grid-4">
+        <div class="card">
+          <h3>美國就業與 Fed</h3>
+          <div class="metric">非農 +13.9 萬</div>
+          <p class="metric-note">5 月失業率 4.2%，平均時薪月增 0.4%。就業仍穩，短線不利激進降息交易。來源：BLS，2026-06-05 08:30 ET。</p>
+        </div>
+        <div class="card">
+          <h3>美債與通膨預期</h3>
+          <div class="metric">10Y 4.49%</div>
+          <p class="metric-note">2Y 3.97%，紐約聯準銀行 1 年通膨預期降至 3.2%。殖利率高檔但通膨恐慌未再升溫。來源：Fed H15（2026-06-08 數據）、NY Fed（2026-06-08）。</p>
+        </div>
+        <div class="card">
+          <h3>台灣出口</h3>
+          <div class="metric">517.4 億美元</div>
+          <p class="metric-note">5 月年增 38.6%，創單月新高，AI 與美國拉貨動能明確。來源：台灣財政部，2026-06-09，官方頁面未標示精確發布時間。</p>
+        </div>
+        <div class="card">
+          <h3>亞洲景氣交叉訊號</h3>
+          <div class="metric">中國出口 +4.8%</div>
+          <p class="metric-note">5 月進口年減 3.4%；日本 Q1 GDP 修正後僅小幅成長。區域需求並未熄火，但復甦仍不平均。來源：Reuters/MarketScreener，2026-06-09。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>今日市場結論</h2>
+      <div class="content">
+        <ul>
+          <li>美國 5 月非農新增 13.9 萬人、失業率維持 4.2%，代表景氣沒有掉進衰退交易，Fed 也缺少立刻大幅轉鴿的理由。</li>
+          <li>紐約聯準銀行 1 年期通膨預期從 3.6% 降到 3.2%，顯示消費者通膨焦慮降溫，但這不足以直接推動美債大漲；目前更像「高利率但未失控」環境。</li>
+          <li>USTR 表示沒有立即對晶片加徵關稅，給半導體鏈一個短線喘息，但保護主義立場未退，政策溢價仍會跟著出口管制反覆擾動。</li>
+          <li>Broadcom 財報與 Meta 的企業 AI Agent 佈局，延續 AI 變現與基建擴張的主線；市場焦點已不只在 GPU，而是往 ASIC、交換器、電力與企業導入擴散。</li>
+          <li>台灣 5 月出口創歷史單月新高，說明美國需求、AI 拉貨與供應鏈轉移仍在支撐台股基本面，對晶圓代工、伺服器、網通與電源鏈偏多。</li>
+          <li>中國出口仍有韌性、日本 GDP 僅小幅上修，亞洲景氣訊號偏混合，代表區域股市更適合選股而非全面追價。</li>
+          <li>伊朗制裁、北約攔截無人機與太空軍大額合約，使軍工、衛星通訊與能源風險溢價維持在盤面；這條線未必天天強，但不宜完全忽視。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>重大新聞雷達</h2>
+      <div class="content">
+        <div class="news-item">
+          <div class="news-label">政策、央行與美元利率</div>
+          <div class="news-body">
+            <h3>美國 5 月非農新增 13.9 萬人，失業率持平 4.2%</h3>
+            <p>就業增速較前月放緩，但仍足以否定「景氣快速崩落」敘事。對美元、殖利率與銀行股偏撐，對最依賴降息預期的高估值成長股偏壓抑。</p>
+            <p><span class="tag mid">影響方向：中性偏利空降息交易</span><span class="tag mid">時間尺度：短中線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation</a>，2026-06-05 08:30 ET。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">政策、央行與美元利率</div>
+          <div class="news-body">
+            <h3>紐約聯準銀行 5 月調查顯示 1 年通膨預期降至 3.2%</h3>
+            <p>通膨預期回落有助於抑制市場的再通膨恐慌，但搭配就業仍穩，較像「Fed 可以等」而不是「Fed 必須急降」。債券與科技股的反應因此更容易分化。</p>
+            <p><span class="tag mid">影響方向：中性</span><span class="tag mid">時間尺度：短線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://www.newyorkfed.org/newsevents/news/research/2026/20260608">New York Fed Survey of Consumer Expectations</a>，2026-06-08，官方頁面未標示精確發布時間。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">政策、白宮與出口管制</div>
+          <div class="news-body">
+            <h3>USTR Greer：目前沒有立即對晶片加徵關稅，但保護措施仍屬必要</h3>
+            <p>市場把這視為半導體鏈短線鬆一口氣，但不代表美國對高端晶片與供應鏈安全的政策已轉向。利多非中系半導體與台灣高階製造，利空依賴中國需求與模糊轉單邏輯的族群。</p>
+            <p><span class="tag good">影響方向：利多非中系半導體鏈</span><span class="tag mid">時間尺度：短中線</span><span class="tag blue">可信度：中高</span></p>
+            <p class="source">來源：<a href="https://www.investing.com/news/economy-news/ustr-greer-sees-no-immediate-chip-tariffs-but-says-protection-important-for-sector-4707278">Reuters / Investing</a>，2026-06-08 12:19 ET。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">國際局勢與地緣政治</div>
+          <div class="news-body">
+            <h3>美國財政部制裁伊朗影子銀行網路與石油走私通道</h3>
+            <p>這類制裁會推高中東供應不確定性，支撐油價與能源風險溢價，對航空、運輸與高耗能產業不利，但對能源、生產設備與防禦型資產有支撐。</p>
+            <p><span class="tag bad">影響方向：利空成本端</span><span class="tag mid">時間尺度：中線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://home.treasury.gov/news/press-releases/sb0148">U.S. Treasury</a>，2026-06-06，官方頁面未標示精確發布時間。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">軍事、國防與無人機</div>
+          <div class="news-body">
+            <h3>北約戰機因軍用無人機進入拉脫維亞領空而緊急升空</h3>
+            <p>這提醒市場歐洲東翼的無人機與防空需求仍在升高。利多雷達、反無人機、導引與防空供應鏈，也讓歐洲軍費持續擴張的敘事更難消退。</p>
+            <p><span class="tag good">影響方向：利多軍工防空鏈</span><span class="tag mid">時間尺度：中線</span><span class="tag blue">可信度：中高</span></p>
+            <p class="source">來源：<a href="https://www.marketscreener.com/news/latest/nato-jets-scrambled-after-military-drones-entered-latvian-airspace-db18b8794dc6566d">Reuters / MarketScreener</a>，2026-06-08 11:05 ET。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">衛星、太空與通訊基礎建設</div>
+          <div class="news-body">
+            <h3>美國太空軍授予 SpaceX 41.6 億美元太空飛彈追蹤感測器合約</h3>
+            <p>這說明低軌衛星、飛彈追蹤與戰場資料鏈已是核心軍事投資方向。中長線利多衛星通訊、太空感測、地面站與相關零組件供應鏈。</p>
+            <p><span class="tag good">影響方向：利多太空軍工鏈</span><span class="tag mid">時間尺度：中長線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://www.spaceforce.mil/News/Article-Display/Article/4198189/space-force-awards-416-billion-contract-for-space-based-missile-tracking-sensor/">U.S. Space Force</a>，2026-05-29，官方頁面未標示精確發布時間。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">財經與投資市場</div>
+          <div class="news-body">
+            <h3>Broadcom 第二季營收 150 億美元，AI 半導體營收年增 46%</h3>
+            <p>財報證明 AI 需求已從單一 GPU 題材延伸到客製 ASIC 與網通架構。這對 <code>AVGO</code>、<code>ANET</code>、<code>MRVL</code>、<code>SMH</code> 以及台灣伺服器與交換器供應鏈偏多。</p>
+            <p><span class="tag good">影響方向：利多 AI 基建</span><span class="tag mid">時間尺度：短中線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://www.prnewswire.com/news-releases/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-results-and-quarterly-dividend-302790698.html">Broadcom</a>，2026-06-05 16:05 ET。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">科技與 AI 趨勢</div>
+          <div class="news-body">
+            <h3>Meta 推出 Business Agent，強攻企業 AI 客服與銷售流程</h3>
+            <p>這是 AI Agent 從概念轉往營收化的重要跡象。利多雲端、推理算力、企業軟體整合與資料中心網路，但若企業導入速度不及預期，相關估值也會回測。</p>
+            <p><span class="tag good">影響方向：利多企業 AI 生態</span><span class="tag mid">時間尺度：中線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://about.fb.com/news/2026/06/meta-business-agent/amp/">Meta Newsroom</a>，2026-06-09，搜尋結果顯示發布於今日，官方頁面未標示精確時間。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">能源、電力與基礎建設</div>
+          <div class="news-body">
+            <h3>制裁與軍事風險延續油氣供應不確定性，能源溢價仍在</h3>
+            <p>目前油價的關鍵不是需求轉強，而是供應端風險無法完全消退。這讓能源、油服與天然氣基建維持相對優勢，也提高資料中心用電與工業成本的市場敏感度。</p>
+            <p><span class="tag good">影響方向：利多能源股、利空成本型產業</span><span class="tag mid">時間尺度：短中線</span><span class="tag blue">可信度：中</span></p>
+            <p class="source">來源：綜合 <a href="https://home.treasury.gov/news/press-releases/sb0148">U.S. Treasury</a> 2026-06-06 與近兩日 Reuters 地緣政治報導整理；能源價格屬市場推論，非單一官方聲明。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">亞洲與台灣相關新聞</div>
+          <div class="news-body">
+            <h3>台灣 5 月出口 517.4 億美元、年增 38.6%，創單月新高</h3>
+            <p>這是今天對台股最關鍵的硬數據。AI 伺服器、半導體與美國拉貨明顯支撐出口，對晶圓代工、伺服器、電源、散熱與高速傳輸供應鏈偏多。</p>
+            <p><span class="tag good">影響方向：利多台股電子與出口鏈</span><span class="tag mid">時間尺度：短中線</span><span class="tag blue">可信度：高</span></p>
+            <p class="source">來源：<a href="https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=b43c1f7136a845d6b82315a18a27009e">台灣財政部</a>，2026-06-09，官方頁面未標示精確發布時間。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">亞洲與台灣相關新聞</div>
+          <div class="news-body">
+            <h3>中國 5 月出口年增 4.8%，進口年減 3.4%</h3>
+            <p>出口仍受 AI 與提前拉貨支持，但內需與進口偏弱說明復甦並不全面。對台灣上游零組件短線不差，但中國內需鏈與原物料純景氣股不宜過度樂觀。</p>
+            <p><span class="tag mid">影響方向：中性偏利多上游出口鏈</span><span class="tag mid">時間尺度：短線</span><span class="tag blue">可信度：中高</span></p>
+            <p class="source">來源：<a href="https://uk.marketscreener.com/news/china-s-may-trade-data-beat-forecasts-as-exporters-rush-orders-ride-ai-wave-ce7f5dd3dc8ff523">Reuters / MarketScreener</a>，2026-06-09 00:32 ET。</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-label">亞洲與台灣相關新聞</div>
+          <div class="news-body">
+            <h3>日本第一季 GDP 修正後僅勉強成長，內需復原力仍有限</h3>
+            <p>日本經濟沒有再惡化，但也不足以支撐全面風險偏好擴張。對日圓、日股與亞洲循環股屬中性偏保守訊號，台灣出口鏈仍需看美國需求多於日本內需。</p>
+            <p><span class="tag mid">影響方向：中性</span><span class="tag mid">時間尺度：短線</span><span class="tag blue">可信度：中高</span></p>
+            <p class="source">來源：<a href="https://ca.marketscreener.com/news/japan-s-economy-barely-grew-in-first-quarter-revised-data-shows-ce7f5dc97fcbf526">Reuters / MarketScreener</a>，2026-06-09 12:53 ET。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>美股影響分析</h2>
+      <div class="content">
+        <div class="callout good">
+          <strong>新聞事實：</strong> 非農仍穩、Broadcom 財報證明 AI 基建需求延續、Meta 把 AI Agent 推向企業商業化。<br>
+          <strong>市場推論：</strong> <code>Nasdaq</code> 與 <code>SOX</code> 仍有主線優勢，但行情更容易集中在有訂單與財報支撐的基建股，而不是全面擴散。<br>
+          <strong>策略建議：</strong> 偏多看 <code>AVGO</code>、<code>NVDA</code>、<code>ANET</code>、<code>MRVL</code>、<code>SMH</code>、電力冷卻與資料中心鏈；不要在高殖利率背景下追逐沒有獲利支撐的次級 AI 題材股。
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Nasdaq / S&amp;P 500</h3>
+            <p>宏觀面不是全面利空，而是「高利率下的選股市場」。只要就業不失速、AI 基建財報續強，指數仍有撐，但 CPI/PPI 前估值擴張空間有限。</p>
+          </div>
+          <div class="card">
+            <h3>費城半導體指數</h3>
+            <p>晶片關稅暫未立即上路，對情緒面是舒緩；真正更重要的是高階製造與網通資本支出沒停。台灣與美系高階製程/交換器鏈仍優於成熟製程與中國需求暴露較高的公司。</p>
+          </div>
+          <div class="card">
+            <h3>能源、軍工與衛星通訊</h3>
+            <p>伊朗制裁、無人機入侵與太空軍大額合約，讓 <code>XLE</code>、<code>ITA</code>、<code>ARKX</code>、防空/雷達/衛星題材維持輪動空間。這條線波動高，但有事件催化。</p>
+          </div>
+          <div class="card">
+            <h3>金融與大型科技</h3>
+            <p>金融股受惠殖利率高檔與景氣未崩；大型科技則需分辨基本面。具現金流與 AI 變現能力者可續抱，純題材與估值型標的要提高停損紀律。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>台股與台灣經濟影響</h2>
+      <div class="content">
+        <div class="callout mid">
+          <strong>新聞事實：</strong> 台灣 5 月出口創單月新高，中國出口仍有韌性，美國暫無立即晶片關稅。<br>
+          <strong>市場推論：</strong> 台股主線仍在 AI 伺服器、晶圓代工、網通、散熱、電源與重電，且基本面支撐強過單純題材炒作。<br>
+          <strong>策略建議：</strong> 偏多但分批，優先基本面與訂單確認度高的權值/次權值供應鏈；若美元因 CPI 再轉強，要先降槓桿而不是硬拗。
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>台股大盤</h3>
+            <p>出口數據給大盤基本面加分，但短線技術面若已連彈，後續更看權值股輪動與外資是否續買。市場不是沒有風險，只是基本面暫時還站在多方。</p>
+          </div>
+          <div class="card">
+            <h3>台幣與外資流向</h3>
+            <p>若美國 CPI/PPI 高於預期，美元與美債殖利率回升會先干擾台幣與外資節奏；但若通膨未超預期，台灣出口優勢可維持台股相對強勢。</p>
+          </div>
+          <div class="card">
+            <h3>半導體、AI 與衛星供應鏈</h3>
+            <p>高階製程、CoWoS、AI 伺服器、交換器、散熱電源與低軌衛星零組件仍是最值得持續追蹤的主線。相較之下，成熟製程與中國需求高暴露族群更容易在政策雜訊時承壓。</p>
+          </div>
+          <div class="card">
+            <h3>能源成本與台灣經濟</h3>
+            <p>油價若維持高檔，將壓縮運輸、塑化下游與部分消費類獲利；但也會讓儲能、電網、重電與能效設備題材更容易獲得資金青睞。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>產業與公司影響矩陣</h2>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>分類</th>
+              <th>標的</th>
+              <th>邏輯</th>
+              <th>主要風險</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>利多</td>
+              <td>美股：<code>AVGO</code>、<code>NVDA</code>、<code>ANET</code>、<code>MRVL</code>、<code>SMH</code>；台股：<code>2330</code>、<code>2382</code>、<code>3231</code>、<code>2308</code></td>
+              <td>AI 基建需求由 GPU 擴散到 ASIC、交換器、電源與資料中心配套，且台灣出口數據已提供基本面驗證。</td>
+              <td>若 CPI/PPI 超預期、10 年債殖利率快速再上行，短線評價面會先收縮。</td>
+            </tr>
+            <tr>
+              <td>利多</td>
+              <td>美股：<code>ITA</code>、<code>XAR</code>、<code>ARKX</code>、<code>LMT</code>、<code>RTX</code>；台股：低軌衛星/軍工零組件鏈如 <code>3491</code>、<code>6285</code>、<code>2314</code></td>
+              <td>無人機、防空與太空感測投資延續，地緣政治使軍工與衛星通訊維持政策支出支撐。</td>
+              <td>題材常受事件驅動，若衝突降溫或政府預算延遲，回檔會很快。</td>
+            </tr>
+            <tr>
+              <td>利多</td>
+              <td>美股：<code>XLE</code>、<code>OIH</code>；台股：重電與儲能鏈如 <code>1519</code>、<code>1503</code>、<code>1513</code></td>
+              <td>能源風險溢價與資料中心用電需求，支撐油氣服務與電力基建投資主題。</td>
+              <td>若中東風險快速降溫或油價跌破市場預期，資金可能迅速輪出。</td>
+            </tr>
+            <tr>
+              <td>利空</td>
+              <td>美股：航空、消費可選、長久期軟體股；台股：航空、塑化下游、純中國內需鏈</td>
+              <td>高油價、高利率與中國進口疲弱，對成本端與估值端都不友善。</td>
+              <td>若油價回落、殖利率下滑，這些族群可能出現技術性反彈。</td>
+            </tr>
+            <tr>
+              <td>中性觀察</td>
+              <td>美股：銀行、工業；台股：金融、傳產龍頭</td>
+              <td>景氣未失速對其有利，但真正再上攻仍要看 CPI/PPI 是否讓利率重新失控。</td>
+              <td>若通膨數據高於預期或市場重新擔心衰退，金融與循環股會先震盪。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>今日交易觀察清單</h2>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>觀察標的</th>
+              <th>觸發原因</th>
+              <th>短線催化劑</th>
+              <th>主要風險</th>
+              <th>信心程度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>SMH</code> / <code>AVGO</code> / <code>ANET</code></td>
+              <td>Broadcom 財報確認 AI 網通與 ASIC 需求</td>
+              <td>市場重新定價 AI 基建擴散</td>
+              <td>美債殖利率再衝高</td>
+              <td>高</td>
+            </tr>
+            <tr>
+              <td>台股 AI 伺服器與電源鏈</td>
+              <td>台灣 5 月出口創高，AI 拉貨明確</td>
+              <td>月營收與法人上修</td>
+              <td>外資因美元轉強而獲利了結</td>
+              <td>高</td>
+            </tr>
+            <tr>
+              <td><code>ITA</code> / <code>ARKX</code> / 防空雷達鏈</td>
+              <td>北約無人機事件與太空軍合約</td>
+              <td>新軍費、追加合約、地緣政治升溫</td>
+              <td>消息鈍化後回吐漲幅</td>
+              <td>中高</td>
+            </tr>
+            <tr>
+              <td><code>XLE</code> / <code>OIH</code> / 天然氣與油服</td>
+              <td>伊朗制裁與供應風險未消</td>
+              <td>油價續強、庫存數據偏緊</td>
+              <td>中東局勢降溫或需求預期轉弱</td>
+              <td>中</td>
+            </tr>
+            <tr>
+              <td>台股低軌衛星供應鏈</td>
+              <td>太空軍長約強化衛星感測投資主題</td>
+              <td>美國太空/國防新案、商用衛星合作</td>
+              <td>訂單能見度不足、題材波動大</td>
+              <td>中</td>
+            </tr>
+            <tr>
+              <td>避開：長久期高估值軟體、航空、純中國內需鏈</td>
+              <td>高利率與油價環境對估值與成本都不友善</td>
+              <td>若 CPI/PPI 偏熱將放大壓力</td>
+              <td>若利率快速回落會出現軋空反彈</td>
+              <td>中高</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>積極型投資建議</h2>
+      <div class="content grid grid-3">
+        <div class="card">
+          <h3>偏多方向</h3>
+          <p><strong>新聞事實：</strong> AI 財報與台灣出口都還在支撐基本面。<br><strong>市場推論：</strong> AI 基建、電力、軍工太空仍是最有主線感的族群。<br><strong>策略建議：</strong> 採分批布局，優先有財報/訂單支撐的權值與次權值股，不在單日大漲後硬追。</p>
+        </div>
+        <div class="card">
+          <h3>偏空或避開</h3>
+          <p><strong>新聞事實：</strong> 利率高檔、油價風險仍在、中國進口偏弱。<br><strong>市場推論：</strong> 航空、長久期高估值軟體、純中國景氣循環股容易先承壓。<br><strong>策略建議：</strong> 若手上已有獲利，可逢反彈調節，避免把逆風族群硬抱成長投資。</p>
+        </div>
+        <div class="card">
+          <h3>觀望與風控</h3>
+          <p><strong>新聞事實：</strong> 6 月 10 日 CPI、6 月 11 日 PPI 即將公布。<br><strong>市場推論：</strong> 下一個 48 小時決定市場是延續選股多頭，還是回到利率壓估值。<br><strong>策略建議：</strong> 控制槓桿、保留現金，若 10 年債殖利率明顯上破近期高點，先降高 beta 部位。</p>
+        </div>
+      </div>
+      <p class="footer">以上為一般市場策略整理，不構成個人化投資建議。題材失效條件包含：美國通膨意外升溫、殖利率急升、地緣政治快速降溫導致資金撤出防禦題材，或 AI/出口相關財報與訂單低於預期。</p>
+    </section>
+
+    <section>
+      <h2>未來 24 到 72 小時追蹤</h2>
+      <div class="content">
+        <ul>
+          <li><strong>2026-06-10 08:30 ET：</strong> 美國 5 月 CPI。來源：<a href="https://www.bls.gov/schedule/news_release/cpi.htm">BLS</a>。這是短線最重要的利率與科技股方向盤。</li>
+          <li><strong>2026-06-11 08:30 ET：</strong> 美國 5 月 PPI。來源：<a href="https://www.bls.gov/schedule/news_release/ppi.htm">BLS</a>。若 PPI 同步偏熱，市場將更難重押降息。</li>
+          <li><strong>未來 1-3 日：</strong> 觀察美債 10 年殖利率是否持續高於 4.4% 附近，若向上擴張，將先打壓高估值科技股。</li>
+          <li><strong>未來 1-3 日：</strong> 持續追蹤中東制裁後的油價、航運與保險成本變化，這會直接影響能源、航空與台灣進口成本預期。</li>
+          <li><strong>未來 1-3 日：</strong> 觀察台灣大型權值股與伺服器供應鏈對 5 月出口數據的股價反應，判斷市場是接受基本面延續，還是已提前反映。</li>
+          <li><strong>未來 1-3 日：</strong> 留意北約、俄烏與台海新軍事通報，軍工、無人機、低軌衛星題材目前高度依賴事件節奏。</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
