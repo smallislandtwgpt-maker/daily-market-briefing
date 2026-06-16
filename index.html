@@ -6,7 +6,6 @@
   <title>每日國際金融投資晨報</title>
   <style>
     :root {
-      --bg: #f5f1e8;
       --ink: #1d232b;
       --muted: #5d6770;
       --panel: #fffdf9;
@@ -15,9 +14,7 @@
       --accent-2: #1b5674;
       --shadow: 0 16px 36px rgba(29, 35, 43, 0.08);
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       min-height: 100vh;
@@ -28,13 +25,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
       line-height: 1.65;
     }
-
-    main {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 36px 22px 60px;
-    }
-
+    main { max-width: 980px; margin: 0 auto; padding: 36px 22px 60px; }
     .hero {
       background: linear-gradient(135deg, #11263a, #1d615f 58%, #c17a29 120%);
       color: #fff;
@@ -42,7 +33,6 @@
       padding: 30px;
       box-shadow: var(--shadow);
     }
-
     .eyebrow {
       margin: 0 0 8px;
       color: rgba(255,255,255,0.78);
@@ -50,27 +40,9 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(32px, 5vw, 54px);
-      line-height: 1.05;
-    }
-
-    .hero p {
-      max-width: 760px;
-      margin: 16px 0 0;
-      color: rgba(255,255,255,0.9);
-      font-size: 17px;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
+    h1 { margin: 0; font-size: clamp(32px, 5vw, 54px); line-height: 1.05; }
+    .hero p { max-width: 760px; margin: 16px 0 0; color: rgba(255,255,255,0.9); font-size: 17px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
     .button {
       display: inline-flex;
       align-items: center;
@@ -84,12 +56,7 @@
       text-decoration: none;
       border: 1px solid rgba(255,255,255,0.34);
     }
-
-    .button.secondary {
-      background: rgba(255,255,255,0.12);
-      color: #fff;
-    }
-
+    .button.secondary { background: rgba(255,255,255,0.12); color: #fff; }
     section {
       margin-top: 22px;
       background: var(--panel);
@@ -98,31 +65,15 @@
       box-shadow: var(--shadow);
       padding: 22px;
     }
-
-    h2 {
-      margin: 0 0 12px;
-      color: #193548;
-      font-size: 22px;
-    }
-
+    h2 { margin: 0 0 12px; color: #193548; font-size: 22px; }
     .latest {
       display: grid;
       gap: 12px;
       grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
     }
-
-    .latest h3 {
-      margin: 0 0 4px;
-      font-size: 20px;
-    }
-
-    .latest p,
-    .note {
-      margin: 0;
-      color: var(--muted);
-    }
-
+    .latest h3 { margin: 0 0 4px; font-size: 20px; }
+    .latest p, .note { margin: 0; color: var(--muted); }
     .tag {
       display: inline-block;
       margin: 8px 6px 0 0;
@@ -132,9 +83,7 @@
       background: #eee5d8;
       font-size: 13px;
     }
-
     a { color: var(--accent-2); }
-
     @media (max-width: 700px) {
       main { padding: 24px 16px 44px; }
       .hero { padding: 24px 20px; }
@@ -152,7 +101,7 @@
       <h1>每日國際金融投資晨報</h1>
       <p>聚焦國際政策、Fed、地緣政治、AI、半導體、軍工無人機、低軌衛星、能源電力，以及對美股、台股與台灣經濟的市場影響。</p>
       <div class="actions">
-        <a class="button" href="daily-briefings/2026-06-12-global-market-brief.html">閱讀最新晨報</a>
+        <a class="button" href="daily-briefings/2026-06-16-global-market-brief.html">閱讀最新晨報</a>
         <a class="button secondary" href="daily-briefings/">查看晨報列表</a>
       </div>
     </div>
@@ -161,21 +110,21 @@
       <h2>最新一期</h2>
       <div class="latest">
         <div>
-          <h3>2026-06-12｜PPI 再熱但伊朗風險降溫，AI 晶片反彈、油價回落與台鏈續強</h3>
-          <p>聚焦美國 PPI、伊朗談判、ECB 升息、美股強彈、TSMC 月營收、Oracle 與衛星直連手機題材。</p>
-          <span class="tag">PPI 與利率</span>
+          <h3>2026-06-16｜油價急跌帶動 AI 與半導體全面反攻，市場靜待 FOMC 與 BOJ</h3>
+          <p>聚焦美伊暫時性協議、FOMC 與 BOJ 會議、CPI/PPI 餘波、TSMC 月營收、SpaceX/AST 衛星催化與台灣 AI 供應鏈。</p>
+          <span class="tag">FOMC 與 BOJ</span>
           <span class="tag">伊朗與油價</span>
-          <span class="tag">AI 反彈</span>
+          <span class="tag">AI 反攻</span>
           <span class="tag">台灣半導體</span>
           <span class="tag">衛星軍工</span>
         </div>
-        <a class="button" href="daily-briefings/2026-06-12-global-market-brief.html">開啟</a>
+        <a class="button" href="daily-briefings/2026-06-16-global-market-brief.html">開啟</a>
       </div>
     </section>
 
     <section>
       <h2>摘要</h2>
-      <p class="note">今天的主軸是「通膨仍熱，但戰事暫緩讓風險資產先反彈」。操作上可偏多 AI 龍頭、台灣半導體、軍工衛星與能源電力，但不能把油價與 Fed 風險視為已結束。</p>
+      <p class="note">今天的主軸是「油價回落讓科技股重新領漲，但利率風險尚未過關」。操作上可偏多 AI、半導體、衛星與軍工通訊鏈，但必須把 FOMC、BOJ 與伊朗協議失效風險一起納入。</p>
     </section>
   </main>
 </body>
