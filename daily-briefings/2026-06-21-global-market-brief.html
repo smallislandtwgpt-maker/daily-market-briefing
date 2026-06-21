@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日國際金融投資晨報｜2026-06-21</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --ink: #1d232b;
+      --muted: #5c6670;
+      --panel: #fffdf9;
+      --panel-soft: #f1ece2;
+      --line: #ddd4c6;
+      --navy: #14283b;
+      --teal: #1a6a63;
+      --gold: #b06a1f;
+      --good: #0f7b5c;
+      --bad: #b34444;
+      --mid: #8c6920;
+      --shadow: 0 18px 40px rgba(20, 40, 59, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(176, 106, 31, 0.11), transparent 26%),
+        linear-gradient(180deg, #f7f3eb 0%, #f4efe6 42%, #f8f6f0 100%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.68;
+    }
+    a { color: #1d5f7d; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 1180px; margin: 0 auto; padding: 28px 22px 56px; }
+    header {
+      background: linear-gradient(135deg, #11263a 0%, #1e5f63 52%, #c07a2a 118%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; }
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 980px;
+      color: rgba(255,255,255,0.92);
+      font-size: 16px;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.95);
+      font-size: 13px;
+    }
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: #fff;
+      color: #173548;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.34);
+    }
+    .button.secondary { background: rgba(255,255,255,0.12); color: #fff; }
+    section {
+      margin-top: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    section > h2 {
+      margin: 0;
+      padding: 18px 22px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--line);
+      color: var(--navy);
+      font-size: 22px;
+    }
+    .content { padding: 20px 22px 24px; }
+    .grid { display: grid; gap: 14px; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 15px 16px;
+      background: #fff;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 17px; color: var(--navy); }
+    .card p { margin: 0; color: var(--muted); }
+    .metric { font-size: 28px; line-height: 1.1; font-weight: 760; color: var(--ink); }
+    .metric-note { margin-top: 6px; color: var(--muted); font-size: 13px; }
+    .tag {
+      display: inline-block;
+      margin: 0 6px 6px 0;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      white-space: nowrap;
+      background: #ebe3d4;
+      color: #4b4339;
+    }
+    .tag.good { background: #e3f3ee; color: var(--good); }
+    .tag.bad { background: #f8e7e7; color: var(--bad); }
+    .tag.mid { background: #f6efde; color: var(--mid); }
+    .tag.blue { background: #e4eef5; color: #205777; }
+    ul { margin: 0; padding-left: 20px; }
+    li + li { margin-top: 8px; }
+    .news-group + .news-group {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    .news-group h3 { margin: 0 0 12px; color: var(--navy); font-size: 19px; }
+    .news-item {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .news-item:last-child { border-bottom: 0; }
+    .news-label { font-weight: 700; color: var(--navy); }
+    .news-body h4 { margin: 0 0 6px; font-size: 17px; color: var(--navy); }
+    .news-body p { margin: 6px 0; }
+    .source { color: var(--muted); font-size: 13px; }
+    .callout {
+      margin: 14px 0;
+      padding: 14px 16px;
+      border-left: 4px solid #205777;
+      background: #eef5f8;
+      border-radius: 0 10px 10px 0;
+    }
+    .callout.good { border-left-color: var(--good); background: #edf8f3; }
+    .callout.bad { border-left-color: var(--bad); background: #fdf0f0; }
+    .callout.mid { border-left-color: var(--gold); background: #fbf4e8; }
+    .matrix { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th, td {
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f4eee2; color: var(--navy); font-size: 14px; }
+    tr:last-child td { border-bottom: 0; }
+    .footer-note { margin-top: 22px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 980px) {
+      .grid-4, .grid-3, .matrix { grid-template-columns: 1fr; }
+      .news-item { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .page { padding: 18px 14px 40px; }
+      header { padding: 22px 18px; }
+      .content { padding: 18px; }
+      section > h2 { padding: 16px 18px; }
+      .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">Daily Global Market Briefing</p>
+      <h1>2026-06-21｜Fed 與 BOJ 同步偏緊、台灣成長上修，AI 基建續強但中東與台海風險未退</h1>
+      <p class="subtitle">這是一份週日版、為 2026 年 6 月 22 日開盤前準備的晨報。現金市場最新完整價格仍以 2026-06-18 收盤為主，但真正影響下週資金配置的不是過去一根 K 棒，而是利率路徑、油價風險是否再起、以及 AI 雲端基建、電力、衛星與軍工主線能否持續吸金。結論很直接：高估值題材仍要接受高利率約束，但有現金流與資本支出背書的 AI 基建、國防與低軌衛星，仍是目前勝率較高的進攻區。</p>
+      <div class="meta-row">
+        <span class="pill">台北時間日期：2026-06-21</span>
+        <span class="pill">範圍：近 24 小時與仍具市場延續性的事件</span>
+        <span class="pill">定位：積極型投資晨報，不構成個人化投資建議</span>
+      </div>
+      <div class="top-links">
+        <a class="button" href="../index.html">返回首頁</a>
+        <a class="button secondary" href="./index.html">查看歷史晨報</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>市場快照</h2>
+      <div class="content">
+        <div class="grid grid-4">
+          <div class="card">
+            <div class="metric">S&amp;P 500 7,500.58</div>
+            <p class="metric-note">+1.1%｜AP 整理，2026-06-18 收盤</p>
+          </div>
+          <div class="card">
+            <div class="metric">Nasdaq 26,517.93</div>
+            <p class="metric-note">+1.9%｜大型科技與 AI 基建反彈領漲</p>
+          </div>
+          <div class="card">
+            <div class="metric">TAIEX 46,465.20</div>
+            <p class="metric-note">TWSE，2026-06-18 週收盤，單週上漲 5.20%</p>
+          </div>
+          <div class="card">
+            <div class="metric">美元 / 台幣 31.588</div>
+            <p class="metric-note">台灣央行 2026-06-18 收盤價</p>
+          </div>
+          <div class="card">
+            <div class="metric">美債 2Y 4.19%</div>
+            <p class="metric-note">美國財政部 2026-06-18 常數到期殖利率</p>
+          </div>
+          <div class="card">
+            <div class="metric">美債 10Y 4.46%</div>
+            <p class="metric-note">長天期利率仍高，不利無獲利高估值題材</p>
+          </div>
+          <div class="card">
+            <div class="metric">BOJ 政策利率 1.0%</div>
+            <p class="metric-note">日本銀行 2026-06-16 升息後的新操作目標</p>
+          </div>
+          <div class="card">
+            <div class="metric">Juneteenth 後首個交易週</div>
+            <p class="metric-note">2026-06-19 美國休市，週一 2026-06-22 市場將消化週末地緣消息</p>
+          </div>
+        </div>
+        <div class="callout mid">
+          <strong>市場情緒判讀：</strong>VIX 與恐懼貪婪指數缺乏可穩定驗證的單一官方來源，本期不把第三方情緒數值作為核心依據；本報改以 2026-06-18 美股反彈、10 年債維持 4.46%、BOJ 轉向更緊、以及油價 headline 風險是否重回交易主軸，作為情緒判讀基礎。
+        </div>
+        <p class="footer-note">市場資料來源：AP 2026-06-18 美股收盤整理、TWSE 2026-06-18 週報、台灣央行 NT$/US$ Closing Rate、美國財政部 Daily Treasury Rates、日本銀行 2026-06-16 貨幣政策決議。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>今日市場結論</h2>
+      <div class="content">
+        <ul>
+          <li>Fed 在 2026-06-17 維持聯邦基金利率區間 3.5% 至 3.75%，聲明仍強調經濟以 solid pace 擴張、通膨高於目標，點陣圖中值對 2026 年底仍在 3.8%，市場無法再用「快降息」作為高 beta 題材的主要估值支撐。</li>
+          <li>日本銀行 2026-06-16 把無擔保隔夜拆款利率目標調升到約 1.0%，並明言將持續升息與調整寬鬆程度，代表全球流動性最寬鬆的角落也在收縮，日圓套利交易的順風不再像過去那麼穩。</li>
+          <li>台灣央行 2026-06-18 維持政策利率不變，但把 2026 年 GDP 成長率上修到 9.45%，等於官方直接確認 AI 擴產、出口與投資仍在加速，這對台股 AI 供應鏈、半導體與出口信心屬偏多訊號。</li>
+          <li>Oracle 與 NVIDIA 的官方數字仍在證明 AI 不是只靠故事推進。Oracle FY26 Q4 雲端營收年增 47%，IaaS 年增 93%；NVIDIA FY27 Q1 資料中心營收年增 92%，資金仍會優先回到有訂單、有現金流、有電力與機櫃需求的基建股。</li>
+          <li>美國 BIS 5 月 31 日重新釐清先進 AI 晶片出口限制，連中國母公司設在境外的子公司也需要牌照，這對 NVIDIA、AMD、TSMC 與亞洲伺服器供應鏈是長線結構性變數，短線則會反覆帶來 headline risk。</li>
+          <li>中東消息面雖因美伊協議敘事使油價壓力暫時回落，但 Fed 與 BOJ 都在官方文件中直接點名中東風險，代表能源與航運波動還沒有真正退出市場主軸。</li>
+          <li>軍工、反飛彈、防空、衛星直連與台灣不對稱防衛題材，仍是下週值得保留權重的第二主線，尤其在 G7 對俄制裁與台海軍事訊號持續存在的背景下。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>重大新聞雷達</h2>
+      <div class="content">
+        <div class="news-group">
+          <h3>1. 政策、央行與美元利率</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">利空估值</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>Fed 維持利率 3.5% 至 3.75%，明示通膨仍高、經濟仍穩</h4>
+              <p>美國聯準會 2026-06-17 以 12 比 0 維持利率不變，聲明寫明經濟活動以 solid pace 擴張、就業增長仍能跟上勞動供給，而中東衝突造成的能源供應衝擊仍使通膨高於 2% 目標。這代表「高利率更久」仍是市場基準情境。</p>
+              <p class="source">來源：<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm">Federal Reserve FOMC Statement</a>｜發布時間：2026-06-17 14:00 EDT</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">偏鷹</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>Fed 點陣圖中值顯示 2026 年底利率 3.8%，2027 年底仍有 3.6%</h4>
+              <p>Fed 2026-06-17 經濟預測材料顯示，聯邦基金利率中值路徑對 2026、2027、2028 年底分別為 3.8%、3.6%、3.4%。這不是資金可以放心大幅拉升遠期夢想股估值的曲線，反而意味著現金流與資本回收期會被市場更嚴格檢驗。</p>
+              <p class="source">來源：<a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm">Federal Reserve Projections Materials</a>｜發布時間：2026-06-17 14:00 EDT</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">台股偏多</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>台灣央行維持利率不變，但把 2026 GDP 成長上修到 9.45%</h4>
+              <p>台灣央行 2026-06-18 表示，下半年在新興科技應用擴大下，出口與民間投資動能可望延續，全年 GDP 預估由 7.25% 大幅上修到 9.45%；同時把全年 CPI 與 core CPI 微幅上修到 1.91%、1.90%。對台灣出口鏈與 AI 供應鏈是實質基本面背書，但也提醒輸入型通膨與油價風險仍在。</p>
+              <p class="source">來源：<a href="https://www.cbc.gov.tw/en/cp-448-192435-024f3-2.html">Central Bank of the Republic of China (Taiwan)</a>｜發布時間：2026-06-18（頁面未標示時刻）</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">日圓套利降溫</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>日本銀行把隔夜利率目標調升到約 1.0%，並明示將持續升息</h4>
+              <p>日本銀行 2026-06-16 以 7 比 1 決定把無擔保隔夜拆款利率維持目標提高到約 1.0%，並在決議中直接表示，只要經濟、物價與金融條件依其基準情境推進，將持續提高政策利率。這對全球風險資產不是立即性利空，但會慢慢提高高槓桿與高估值交易的資金成本。</p>
+              <p class="source">來源：<a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf">Bank of Japan</a>｜發布時間：2026-06-16 12:19 JST</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>2. 國際局勢與地緣政治</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">油價偏空</span>
+              <span class="tag mid">短線</span>
+              <span class="tag blue">可信度：高，但執行不確定</span>
+            </div>
+            <div class="news-body">
+              <h4>白宮宣布與伊朗達成協議敘事，主軸是荷莫茲海峽重啟與限制伊朗核武</h4>
+              <p>白宮 2026-06-19 表示，美伊簽署 Memorandum of Understanding，主張將重啟荷莫茲海峽自由航行並確保伊朗不取得核武。若執行順利，將壓低原油風險溢價、舒緩全球通膨壓力；但市場仍需驗證協議執行與區域軍事現場是否一致，不能把政治宣示直接當成供應恢復事實。</p>
+              <p class="source">來源：<a href="https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/">The White House</a>｜發布時間：2026-06-19（頁面未標示時刻）</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">風險溢價</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>美國財政部制裁真主黨相關政治與金融網絡，顯示黎巴嫩局勢未退場</h4>
+              <p>美國財政部 2026-06-18 制裁真主黨關聯官員與金融網絡，理由是其阻礙黎巴嫩和平與改革。這提醒市場，中東消息不能只看「協議」兩個字，金融制裁與代理人衝突仍會隨時抬升能源、航運與國防風險溢價。</p>
+              <p class="source">來源：<a href="https://home.treasury.gov/news/press-releases/sb0535">U.S. Treasury</a>｜發布時間：2026-06-18（頁面未標示時刻）</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">軍工偏多</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：中高</span>
+            </div>
+            <div class="news-body">
+              <h4>G7 領袖與澤倫斯基討論加強對俄制裁與援烏防空</h4>
+              <p>根據 Reuters 2026-06-16 對烏克蘭總統澤倫斯基的訪談整理，G7 領袖同意俄羅斯並未在戰場勝出，並討論加強對俄制裁與防空支援。這使軍工、防空、飛彈與歐洲能源安全鏈仍具中線支撐。</p>
+              <p class="source">來源：<a href="https://www.reutersconnect.com/item/wrap-ukraines-zelenskiy-says-g7-leaders-discussed-further-sanctions-on-russia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1ZBOTUwNjE2MDYyMDI2UlAx/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0xWQTAwNzk1MDYxNjA2MjAyNlJQMQ">Reuters</a>｜發布時間：2026-06-16（頁面顯示 5 days ago，未標示具體時刻）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>3. 軍事、國防與無人機產業</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">軍工偏多</span>
+              <span class="tag mid">長線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>台灣在西岸首度實兵發射 HIMARS，驗證「打完就跑」不對稱防衛</h4>
+              <p>Reuters 2026-06-10 報導，台灣軍方在台中首度於西岸實彈射擊美製 HIMARS，模擬對應中國登陸部隊，並強調 shoot-and-scoot 戰術提升戰場存活率。這對洛克希德馬丁、精準彈藥、反登陸防衛與台灣本地軍工供應鏈屬長線正面訊號。</p>
+              <p class="source">來源：<a href="https://www.internazionale.it/ultime-notizie-reuters/2026/06/10/taiwan-fires-battle-tested-rockets-in-shoot-and-scoot-anti-invasion-drill">Reuters / Internazionale</a>｜發布時間：2026-06-10（Reuters 轉載頁未標示時刻）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>4. 衛星、太空與通訊基礎建設</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">衛星偏多</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>SpaceX 成功發射 AST SpaceMobile 的 BlueBird 8-10 直連手機衛星</h4>
+              <p>SpaceX 任務頁顯示，2026-06-17 Falcon 9 成功發射 AST SpaceMobile 的 BlueBird 8、9、10。這使 direct-to-cell 題材重新回到市場焦點，也讓地面站、天線、射頻、網通與低軌衛星基建供應鏈再獲關注；但後續仍須觀察衛星展開、通訊測試與商轉時程。</p>
+              <p class="source">來源：<a href="https://www.spacex.com/launches/bluebird8-10">SpaceX</a>｜發布時間：2026-06-17（任務頁未標示時刻）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>5. 財經與投資市場</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">風險偏好修復</span>
+              <span class="tag mid">短線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>美股 6 月 18 日由科技與小型股領漲，市場先交易油價降溫而非聯準會偏鷹</h4>
+              <p>AP 2026-06-18 收盤整理顯示，S&amp;P 500 漲 1.1%、Nasdaq 漲 1.9%、Russell 2000 漲 2.1%，代表資金短線先對油價與殖利率回落做出正向反應。不過這屬假期前的收盤結構，未必代表 6 月 22 日開盤後也會維持同樣風險偏好。</p>
+              <p class="source">來源：<a href="https://apnews.com/article/411ec68891aa5dc7d7f684e0305e2aa3">AP</a>｜發布時間：2026-06-18</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">利率壓力</span>
+              <span class="tag mid">短中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>美債殖利率仍在高位：2 年 4.19%、10 年 4.46%、30 年 4.90%</h4>
+              <p>美國財政部 2026-06-18 常數到期殖利率顯示，短中長天期利率全面高於 4%，這意味著即便股市在 6 月 18 日反彈，折現率壓力仍未鬆開。高股息防禦、銀行與現金流穩定大型股較能承受這種環境。</p>
+              <p class="source">來源：<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026">U.S. Treasury Daily Treasury Rates</a>｜發布時間：2026-06-18（收盤後資料）</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">成本舒緩</span>
+              <span class="tag mid">短線</span>
+              <span class="tag blue">可信度：中高</span>
+            </div>
+            <div class="news-body">
+              <h4>WTI 7 月期貨 6 月 18 日報 74.75 美元，較前結算跌 2.66%</h4>
+              <p>根據 CME Group 的 2026-06-18 期貨報價頁，WTI 7 月合約報 74.75 美元，反映市場先把中東供應中斷風險折價。若週末沒有新的衝突升級，航運、航空、化工與 AI 電力成本壓力有機會同步舒緩；但油價 headline 仍是最容易在週一開盤造成跳空的變數。</p>
+              <p class="source">來源：<a href="https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.quotes.html">CME Group</a>｜發布時間：2026-06-18 01:49:52 CT（頁面顯示時間）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>6. 科技與 AI 趨勢</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">AI 基建偏多</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>Oracle FY26 Q4 雲端總營收年增 47%，IaaS 年增 93%</h4>
+              <p>Oracle 2026-06-10 財報顯示，Q4 總營收 192 億美元、雲端營收 99 億美元，其中 IaaS 年增高達 93%。這直接支持資料中心、伺服器、網通、交換器、散熱與電力設備需求仍處於上升段，而不是一次性題材。</p>
+              <p class="source">來源：<a href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx">Oracle Investor Relations</a>｜發布時間：2026-06-10</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">AI 主線延續</span>
+              <span class="tag mid">中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>NVIDIA FY27 Q1 營收 816 億美元、資料中心營收 752 億美元，年增 92%</h4>
+              <p>NVIDIA 官方財報頁列示，FY27 Q1 營收 816 億美元、資料中心營收 752 億美元，並額外增加 800 億美元庫藏股授權。AI 伺服器與 GPU 主線仍有獲利支撐；下個時間點是 2026-06-24 的股東會，市場會關注對資本支出、供應與中國限制的最新說法。</p>
+              <p class="source">來源：<a href="https://investor.nvidia.com/financial-info/financial-reports/default.aspx">NVIDIA Investor Relations</a>｜發布時間：2026-05-20</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag bad">中國限制</span>
+              <span class="tag mid">長線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>BIS 釐清先進 AI 晶片出口限制，連中國母公司境外子公司也需牌照</h4>
+              <p>美國商務部 BIS 2026-05-31 指引明確表示，只要最終母公司或總部位於 D:5 國家群或澳門，即便子公司位於境外，出口先進運算項目仍需申請許可。這對中國相關 AI 晶片流向形成更嚴格約束，長線有利非中供應鏈重組，但短線會增加 NVIDIA、AMD、TSMC 與亞洲代工/伺服器鏈的 headline 波動。</p>
+              <p class="source">來源：<a href="https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf">BIS Guidance PDF</a>｜發布時間：2026-05-31</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>7. 能源、電力與基礎建設</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">電力鏈偏多</span>
+              <span class="tag mid">長線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>EIA 指出 Permian 天然氣產量 2021 至 2025 年成長 60%，快於原油</h4>
+              <p>EIA 2026-06-18 Today in Energy 指出，Permian 區 marketed natural gas production 從 2021 年的 172 億立方英尺/日升至 2025 年的 276 億立方英尺/日，增幅 60%，高於原油同期增幅。這代表美國天然氣、管線、LNG 與電力基礎建設仍會是 AI 資料中心用電主線的重要底層支撐。</p>
+              <p class="source">來源：<a href="https://www.eia.gov/about/new/?r=60">EIA Today in Energy</a>｜發布時間：2026-06-18</p>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag mid">中性</span>
+              <span class="tag mid">短線</span>
+              <span class="tag blue">可信度：中高</span>
+            </div>
+            <div class="news-body">
+              <h4>天然氣期貨在 EIA 儲量增加 73 Bcf 後偏弱，短線舒緩燃氣焦慮</h4>
+              <p>CME 2026-06-18 天然氣頁面標示市場在 EIA 公布 73 Bcf 庫存增加後偏弱，說明供給端短線仍有補庫空間。這對燃氣發電與電力成本是暫時舒緩，但不改 AI 帶動長期用電和電網投資擴張的方向。</p>
+              <p class="source">來源：<a href="https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.html">CME Group</a>｜發布時間：2026-06-18（頁面摘要）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-group">
+          <h3>8. 亞洲與台灣相關新聞</h3>
+
+          <div class="news-item">
+            <div class="news-label">
+              <span class="tag good">台股偏多</span>
+              <span class="tag mid">短中線</span>
+              <span class="tag blue">可信度：高</span>
+            </div>
+            <div class="news-body">
+              <h4>TWSE 週報：TAIEX 於 2026-06-18 收在 46,465.20，單週上漲約 5.20%</h4>
+              <p>台灣證交所 2026-06-18 週報顯示，TAIEX 自前週 44,169.04 上升至 46,465.20，市場資金在假期前已先反映 AI 與出口主線強勢。這代表週一開盤若沒有新的外部衝擊，台股仍可能優先回到 AI 伺服器、晶圓代工、電力設備與部分衛星網通族群。</p>
+              <p class="source">來源：<a href="https://wwwc.twse.com.tw/en/about/news/news/content.html?8a8216d69e6379f4019eda5140630294=">TWSE</a>｜發布時間：2026-06-18</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>美股影響分析</h2>
+      <div class="content">
+        <div class="callout good">
+          <strong>核心判讀：</strong>美股目前不是全面風險開啟，而是「利率仍高，但資本支出與油價回落讓某些主線能繼續漲」。最強的仍是 AI 雲端基建、半導體上游、電力設備、國防與衛星；最弱的仍是需要低利率保護估值、但沒有現金流驗證的題材股。
+        </div>
+        <ul>
+          <li><strong>Nasdaq / 大型科技：</strong>Fed 偏鷹本身壓制估值，但 Oracle 與 NVIDIA 的官方數字讓市場更願意買「有營收、看得見訂單」的 AI 資本支出標的，優於純敘事型軟體或小型生成式 AI 概念股。</li>
+          <li><strong>S&amp;P 500：</strong>若原油維持受控，指數層面有利於消費、工業與雲端基建共同支撐；但若 10 年債再次往 4.5% 以上推進，指數上行會立刻遇到估值壓力。</li>
+          <li><strong>費城半導體指數：</strong>台灣央行上修成長、NVIDIA/Oracle 需求強勁，對 GPU、HBM、CoWoS、交換器與高速互連仍是正面；BIS 中國限制則讓中國曝險較高的出貨鏈條承受反覆 headline risk。</li>
+          <li><strong>能源股：</strong>若美伊協議敘事延續，油價回落對整體股市是利多、對傳統能源股則偏中性到短線利空；但一旦週末傳出荷莫茲通行受阻或黎巴嫩局勢升級，能源股會重新變成最直覺的避險進攻區。</li>
+          <li><strong>軍工與衛星通訊：</strong>G7 持續援烏、台灣 HIMARS、真主黨相關制裁與 AST 新衛星發射，都讓軍工、防空、低軌衛星與 direct-to-cell 題材維持中線高關注。</li>
+          <li><strong>金融股：</strong>Higher-for-longer 環境仍有利大型銀行淨利差與資本回報，且 2026-06-24 Fed 壓力測試結果是近 72 小時內的重要次級催化。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>台股與台灣經濟影響</h2>
+      <div class="content">
+        <div class="callout good">
+          <strong>核心判讀：</strong>台灣這一輪不是單靠資金炒作，而是官方成長預測、出口、AI 投資與全球雲端資本支出共同推動。真正需要擔心的不是需求消失，而是利率、油價與中國限制導致估值擴張受限。
+        </div>
+        <ul>
+          <li><strong>台股大盤：</strong>台灣央行上修 2026 GDP 到 9.45%，對台股是非常明確的基本面支撐。若美股週一不出現利率或油價衝擊，台股較有機會延續 AI 伺服器、晶圓代工、散熱、電源、網通與衛星鏈的強勢輪動。</li>
+          <li><strong>台幣與外資：</strong>美元 / 台幣 31.588 反映在 Fed 偏鷹與 BOJ 升息後，亞洲資金環境仍不算寬鬆。對出口商與美元收入公司偏多，但也意味外資不一定全面回流，波動會比基本面更大。</li>
+          <li><strong>半導體：</strong>NVIDIA、Oracle 與 BIS 三條線同時作用。需求面對 TSMC、封裝測試、PCB、高速傳輸是利多；但中國限制使接單地理結構更重要，市場會更偏好美系 CSP 需求占比高的供應商。</li>
+          <li><strong>AI 供應鏈：</strong>伺服器 ODM、機櫃、電源、散熱、交換器與高速連接線仍是台股主攻區。若週一開高，不宜一次滿倉追價，應以分批方式因應利率與假期後消息跳空風險。</li>
+          <li><strong>衛星通訊供應鏈：</strong>AST 直連手機衛星進展對台灣天線、網通、微波通訊與部分高頻材料鏈偏多，但仍屬中期故事，短線容易受單一公司進度消息影響。</li>
+          <li><strong>能源成本：</strong>若油價續跌，對台灣電子製造業、航運與航空成本結構是偏多；若中東重回升級，能源與運價波動將先壓抑市場情緒再反映到企業獲利。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>產業與公司影響矩陣</h2>
+      <div class="content">
+        <div class="matrix">
+          <div class="card">
+            <h3>利多</h3>
+            <p><strong>美股 / ETF：</strong>NVDA、ORCL、SMH、LMT、RTX、ITA、ASTS、VRT、ETN</p>
+            <p><strong>台股：</strong>2330 台積電、2382 廣達、3231 緯創、6669 緯穎、2308 台達電、2345 智邦、3491 昇達科、6285 啟碁</p>
+            <p><strong>主因：</strong>AI 雲端基建、資料中心電力、衛星直連、台灣成長上修、軍工防空需求。</p>
+          </div>
+          <div class="card">
+            <h3>利空</h3>
+            <p><strong>美股 / ETF：</strong>ARKK 類長天期成長股、未獲利小型 AI 股、對中出貨敏感高波動半導體、油價跳升時的航空與航運股</p>
+            <p><strong>台股：</strong>高本益比且缺乏營收驗證的小型 AI/機器人題材股、油價敏感的航空與部分塑化下游</p>
+            <p><strong>主因：</strong>Fed 與 BOJ 偏緊、長端殖利率高位、BIS 中國限制、週末地緣跳空風險。</p>
+          </div>
+          <div class="card">
+            <h3>中性觀察</h3>
+            <p><strong>美股 / ETF：</strong>AAPL、MSFT、GOOGL、XLE、USO、KRE</p>
+            <p><strong>台股：</strong>2317 鴻海、2454 聯發科、2610 華航、2618 長榮航、4906 正文</p>
+            <p><strong>主因：</strong>具基本面，但短線更受利率、油價、產品週期與單一消息催化牽動，需要等待新資訊確認。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>今日交易觀察清單</h2>
+      <div class="content">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>主題</th>
+                <th>關注標的</th>
+                <th>觸發原因</th>
+                <th>主要風險</th>
+                <th>信心程度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AI 雲端基建</td>
+                <td>NVDA、ORCL、SMH、2330、2382、6669</td>
+                <td>Oracle 與 NVIDIA 官方數字持續強化 AI 資本支出循環</td>
+                <td>10 年債重新衝高、估值壓縮</td>
+                <td>高</td>
+              </tr>
+              <tr>
+                <td>台灣 AI 伺服器鏈</td>
+                <td>2382、3231、6669、2317、2308</td>
+                <td>台灣央行上修 GDP、外需與投資動能確認</td>
+                <td>假期後跳空、外資匯出、短線過熱</td>
+                <td>高</td>
+              </tr>
+              <tr>
+                <td>軍工與防空</td>
+                <td>LMT、RTX、NOC、ITA</td>
+                <td>台灣 HIMARS、G7 援烏、防空需求延續</td>
+                <td>外交降溫、軍費進度延後</td>
+                <td>中高</td>
+              </tr>
+              <tr>
+                <td>低軌衛星 / 直連手機</td>
+                <td>ASTS、3491、6285</td>
+                <td>SpaceX 成功發射 BlueBird 8-10</td>
+                <td>衛星展開與商轉進度不如預期</td>
+                <td>中</td>
+              </tr>
+              <tr>
+                <td>電力設備 / 氣電基建</td>
+                <td>VRT、ETN、PWR、2308</td>
+                <td>Oracle/NVIDIA 帶來機櫃與電力設備需求，EIA 顯示氣源基礎仍擴張</td>
+                <td>大型專案遞延、原物料上升</td>
+                <td>中高</td>
+              </tr>
+              <tr>
+                <td>油價波動交易</td>
+                <td>XLE、CVX、OXY、USO</td>
+                <td>美伊協議與荷莫茲風險兩股力量同時存在</td>
+                <td>政治消息反向、隔夜跳空</td>
+                <td>中</td>
+              </tr>
+              <tr>
+                <td>金融與壓力測試</td>
+                <td>JPM、BAC、KRE、XLF</td>
+                <td>高利率環境延續，6 月 24 日 Fed 壓力測試將成催化</td>
+                <td>監管口徑偏嚴、信用風險升高</td>
+                <td>中高</td>
+              </tr>
+              <tr>
+                <td>避開區</td>
+                <td>未獲利小型 AI / 機器人 / 無人機題材股</td>
+                <td>利率高位下，資金更偏好有現金流主線</td>
+                <td>題材熱度短線續飆</td>
+                <td>高</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>積極型投資建議</h2>
+      <div class="content">
+        <div class="callout good">
+          <strong>新聞事實：</strong>Fed 與 BOJ 都偏緊，台灣央行上修成長，Oracle 與 NVIDIA 持續證明 AI 基建需求強勁，SpaceX/AST 延續低軌衛星進度，中東風險仍未完全退場。
+        </div>
+        <div class="callout mid">
+          <strong>市場推論：</strong>資金更可能集中在「有獲利、有資本支出、有政策/安全需求支撐」的產業，而不是全面擴散到所有成長股。週一若開高，領漲的應仍是 AI 基建、電力、軍工、衛星與台灣供應鏈核心，不是投機小票。
+        </div>
+        <div class="callout bad">
+          <strong>策略建議：</strong>偏多但要分批。可考慮逢回布局 AI 基建、台灣 AI 供應鏈、電力設備、國防與部分低軌衛星主線；偏空/避開沒有現金流驗證的高估值題材股，以及高度受中國限制 headline 影響的脆弱標的；若要做能源或地緣避險，只適合小部位、快節奏、嚴格停損。
+        </div>
+        <ul>
+          <li><strong>偏多方向：</strong>AI 伺服器、雲端基建、電力設備、國防防空、低軌衛星與台灣受惠出口鏈。</li>
+          <li><strong>偏空方向：</strong>高本益比無獲利成長股、純情緒 AI/機器人/無人機小型股、單靠中國需求且缺乏替代市場的供應鏈。</li>
+          <li><strong>觀望方向：</strong>航空、航運、傳統能源下游，等待週末後油價與中東消息是否再度翻轉。</li>
+          <li><strong>分批布局方式：</strong>先打 1/3 至 1/2 倉，讓市場先消化週末消息與利率走勢，再決定是否加碼。</li>
+          <li><strong>失效條件：</strong>10 年債快速升破 4.5% 且油價同步跳升；或美伊協議破局、地緣衝突惡化，造成風險資產全面下修。</li>
+          <li><strong>風險控管：</strong>本報為一般市場策略，不是個人化財務建議；短線交易應先定停損，再決定部位大小。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>未來 24 到 72 小時追蹤</h2>
+      <div class="content">
+        <ul>
+          <li><strong>2026-06-22 09:00 EDT：</strong>Fed Governor Christopher Waller 於「International Roles of the U.S. Dollar」會議致詞，若談到通膨與美元地位，可能影響利率與美元預期。</li>
+          <li><strong>2026-06-23 10:00 EDT：</strong>BLS 發布 2026 年 5 月 State Employment and Unemployment，若州層級勞動數據仍緊，將強化 higher-for-longer 敘事。</li>
+          <li><strong>2026-06-24 08:50 JST：</strong>日本銀行公布 6 月會議 Summary of Opinions，市場會確認升息後委員對後續節奏是偏快還是偏慢。</li>
+          <li><strong>2026-06-24 09:00 PT：</strong>NVIDIA 年度股東會，市場聚焦 AI 需求、供應鏈、資本配置與中國限制回應。</li>
+          <li><strong>2026-06-24 16:00 EDT：</strong>Fed 公布年度銀行壓力測試結果，將成大型銀行與金融 ETF 的重要事件。</li>
+          <li><strong>隨時追蹤：</strong>荷莫茲海峽航運、原油期貨、保險費率與中東軍事消息是否惡化；這會直接決定週一開盤資金是在追 AI 還是回避風險。</li>
+          <li><strong>衛星題材：</strong>追蹤 AST BlueBird 8-10 是否公告後續部署或測試節點，避免只因發射成功就過度外推商轉速度。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>資料來源與說明</h2>
+      <div class="content">
+        <ul>
+          <li>本報優先採用 Fed、台灣央行、日本銀行、白宮、財政部、BIS、EIA、TWSE、公司 IR、AP 與 Reuters 等來源。</li>
+          <li>若來源頁未標示精確時區或發稿時刻，本報已在各則新聞下標示「未標示時刻」，避免把不完整時間資訊誤寫成精準時間。</li>
+          <li>對油價、荷莫茲海峽與中東局勢的判讀，需把官方政治聲明與實際航運/制裁執行分開看待；政治宣示不等於供應風險立即消失。</li>
+          <li>本報使用的公開來源連結：<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm">Fed 聲明</a>、<a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm">Fed 預測</a>、<a href="https://www.cbc.gov.tw/en/cp-448-192435-024f3-2.html">台灣央行</a>、<a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf">日本銀行</a>、<a href="https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/">White House</a>、<a href="https://home.treasury.gov/news/press-releases/sb0535">U.S. Treasury</a>、<a href="https://www.spacex.com/launches/bluebird8-10">SpaceX</a>、<a href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx">Oracle IR</a>、<a href="https://investor.nvidia.com/financial-info/financial-reports/default.aspx">NVIDIA IR</a>、<a href="https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf">BIS 指引</a>、<a href="https://apnews.com/article/411ec68891aa5dc7d7f684e0305e2aa3">AP 收盤整理</a>、<a href="https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.quotes.html">CME 原油</a>、<a href="https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.html">CME 天然氣</a>、<a href="https://www.eia.gov/about/new/?r=60">EIA</a>、<a href="https://wwwc.twse.com.tw/en/about/news/news/content.html?8a8216d69e6379f4019eda5140630294=">TWSE</a>、<a href="https://www.internazionale.it/ultime-notizie-reuters/2026/06/10/taiwan-fires-battle-tested-rockets-in-shoot-and-scoot-anti-invasion-drill">Reuters HIMARS</a>、<a href="https://www.reutersconnect.com/item/wrap-ukraines-zelenskiy-says-g7-leaders-discussed-further-sanctions-on-russia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1ZBOTUwNjE2MDYyMDI2UlAx/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0xWQTAwNzk1MDYxNjA2MjAyNlJQMQ">Reuters G7/Ukraine</a>。</li>
+        </ul>
+        <p class="footer-note">最後更新：台北時間 2026-06-21。此 HTML 可獨立開啟，不依賴外部 CSS 或 JavaScript。</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
